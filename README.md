@@ -32,7 +32,7 @@ soil-monitoring/
 
 ## Instalasi Laragon
 1. Salin folder `soil-monitoring` ke `C:\laragon\www\`.
-2. Jalankan Laragon: Start All.
+2. Pilih PHP **8.3 atau lebih baru** di menu Laragon **PHP > Version**, lalu klik **Start All**. Pastikan PHP untuk web server dan terminal sama-sama versi 8.3 atau lebih baru (`php -v`).
 3. Buka HeidiSQL/phpMyAdmin dari Laragon.
 4. Import `database/schema.sql`.
 5. Buka `http://localhost/soil-monitoring/setup.php`.
@@ -44,6 +44,8 @@ soil-monitoring/
    `cd C:\laragon\www\soil-monitoring`
    lalu:
    `composer install`
+
+PhpSpreadsheet membutuhkan PHP 8.3 atau lebih baru. Jika menggunakan PHP built-in server, jalankan server dengan executable PHP 8.3+ yang sama, bukan PHP lama dari instalasi lain.
 
 ## Agar ESP32 bisa mengakses website
 Jangan gunakan `localhost` pada ESP32. Gunakan IP komputer yang menjalankan Laragon.
